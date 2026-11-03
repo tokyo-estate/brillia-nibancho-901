@@ -332,8 +332,9 @@ figcaption .d{display:none}
 .hero .info .spec{flex-wrap:wrap}
 .bar .brand small .nw{white-space:nowrap}  /* スマホの2行表示は「幕張ベイパーク／ライズゲートタワー 1819」で折る */
 /* ---- ブリリア二番町901 ---- */
-@media (max-aspect-ratio:1/1){.hero .media{aspect-ratio:1280/1028}.hero .media2{aspect-ratio:2400/1340}}
-.hero .media2 .poster{object-position:50% 55%}
+@media (max-aspect-ratio:1/1){.hero .media{aspect-ratio:1280/1028}.hero .media2{aspect-ratio:4/3}}
+.hero .media2 .poster{object-position:50% 60%}  /* 2枚目＝北東の窓の写真（4:3）。旧案 hero_top.jpg（TV正面）は img/ に残置 */
+@media (min-aspect-ratio:1/1){.hero .media2 .lbl{left:auto;right:0;text-align:right;padding-right:72px}.hero .media2 .lbl .k{justify-content:flex-end}.hero .media2::after{background:linear-gradient(180deg,rgba(0,0,0,0) 50%,rgba(0,0,0,.7) 100%),linear-gradient(270deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 45%)}}
 @media (min-aspect-ratio:1/1){.hero .media video{object-position:50% 22%}}  /* 中央70%の外観映像（約5:4）を横長画面で cover するとき屋上を切らない */
 .credit{font-size:10.5px;line-height:1.7;opacity:.75;margin-top:8px}
 /* ロビーが明るいので文字側を暗く（ヒーロー左下・締めくくり） */
@@ -400,7 +401,7 @@ html[lang="zh"] .hero .info .p small{display:none}
     <div class="scroll">SCROLL</div>
   </div>
   <div class="media2">
-    <img class="poster" src="img/hero_top.jpg?v=20261104" srcset="img/hero_top_sp.jpg?v=20261104 1280w, img/hero_top.jpg?v=20261104 2400w" sizes="100vw" width="2400" height="1340" loading="lazy" alt="901号室のリビング・ダイニング">
+    <img class="poster" src="img/hero_top2.jpg?v=20261104" srcset="img/hero_top2_sp.jpg?v=20261104 1280w, img/hero_top2.jpg?v=20261104 2400w" sizes="100vw" width="2400" height="1792" loading="lazy" alt="901号室のリビング・ダイニング">
     <div class="lbl">
       <p class="k">Living &amp; Dining</p>
       <p class="t" data-i18n="t010">家具付きで、<br>すぐに暮らせる1LDK</p>
